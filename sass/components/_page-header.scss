@@ -1,6 +1,12 @@
 /* Шапка сайта */
 .header {
   border-bottom: 1px solid #ececec;
+
+  &__container,
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .container {
@@ -14,10 +20,10 @@
 .site-nav {
   display: flex;
   margin-left: 92px;
-}
 
-.site-nav__item + .site-nav__item {
-  margin-left: 50px;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -32,42 +38,36 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms var(--timing-funcion);
-}
 
-.header__container,
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link--current {
   position: relative;
   color: var(--accent-color);
-}
 
-.site-nav__link--current::after {
-  content: '';
-  position: absolute;
-  display: block;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .contacts-list {
   display: flex;
   margin-left: auto;
-}
 
-.contacts-list__item + .contacts-list__item {
-  margin-left: 50px;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
 .contacts {
@@ -81,14 +81,14 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms var(--timing-funcion);
-}
 
-.contacts:hover,
-.contacts:focus {
-  color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.contacts__logo {
-  margin-right: 10px;
-  fill: currentColor;
+  &__logo {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }

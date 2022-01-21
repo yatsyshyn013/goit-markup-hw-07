@@ -6,6 +6,38 @@
 }
 .team-list {
   display: flex;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__description {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__pic {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .team-list__item {
@@ -13,58 +45,30 @@
   width: 270px;
   height: 251px;
   margin-right: 30px;
-}
 
-.team-list__item:last-child {
-  margin-right: 0;
-}
-
-.team-list__title {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.team-list__description {
-  color: var(--description-text-color);
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-}
-
-.team-list__info {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-list__pic {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-networks {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__logo {
+    fill: currentColor;
+  }
 }
 
 .social-networks__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
-}
 
-.social-networks__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-networks__link {
@@ -76,14 +80,10 @@
   height: 100%;
   color: var(--secondary-gray-color);
   transition: background-color 250ms var(--timing-funcion), color 250ms var(--timing-funcion);
-}
 
-.social-networks__link:hover,
-.social-networks__link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
-}
-
-.social-networks__logo {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+  }
 }

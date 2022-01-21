@@ -8,17 +8,17 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
 
-.logo--accent {
-  color: var(--accent-color);
-}
+  &--accent {
+    color: var(--accent-color);
+  }
 
-.logo--white {
-  color: var(--white-text-color);
-}
+  &--white {
+    color: var(--white-text-color);
+  }
 
-.logo--secondary {
-  display: inline-block;
-  margin-bottom: 20px;
+  &--secondary {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
